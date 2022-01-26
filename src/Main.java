@@ -9,11 +9,6 @@ public class Main {
 
 	public static void main(String[] args) throws SQLException {
 		String url = "jdbc:mysql://localhost:3306/devoir";
-		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
-		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
-		}
 		
 		try {
 			Connection cx = DriverManager.getConnection(url, "root", "12345");
